@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS positions</title>
+    <style>
+        .swim-container{
+            position: relative;
+            border: 2px solid plum;
+        }
+        .box{
+            border: 2px solid dotted plum;
+            width: 200px;
+        }
+        /* .boy{
+            position: relative;
+            left: 50px;
+            top: -30px;
+        } */
+         .boy{
+            position: absolute;
+            top: 40px;
+            left: 100px;
+         }
+         /* .boy{
+         position:sticky;
+         top:0px
+         } */
+          .boy{
+            position: fixed;
+            top: 200px;
+            left: 50px;
+          }
+
+         
+         .dummy{
+            border: 1px solid tomato;
+            width: 200px;
+            height: 200px;
+         }
+         .another{
+            border: 2px solid blue;
+         }
+
+
+    </style>
+</head>
+<body>
+    <h3>CSS positions</h3>
+    <ol>
+        <!-- flow related -->
+        <li>Static</li>
+        <li>relative: <small>current position relative e koto tuku change hobe. and will not leave the current spot.</small></li>
+        <li>Absolute. <small>will loss it's own positin and will move based on the root.</small></li>
+        <!-- scroll  related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+    <div class="swim-container">
+        <div class="box boy"><img src="images/download (1).jpeg" alt="">
+        </div>
+        <div class="box"><img src="images/download (2).jpeg" alt="">
+        </div>
+        <div class="box"><img src="images/download.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+
+    <div class="another">
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+</body>
+</html>
